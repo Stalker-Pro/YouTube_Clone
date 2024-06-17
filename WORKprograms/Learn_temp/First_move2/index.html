@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start HTML</title>
+    <link rel="icon" href="./images/free.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <img src="https://picsum.photos/id/8/1025/900" alt="LAPTOP"> -->
+    <!-- <picture>
+        <source media="(max-width:500px)" srcset="https://picsum.photos/id/20/1025/300">
+        <source media="(max-width:1000px)" srcset="https://picsum.photos/id/10/1025/600">
+        <img src="https://picsum.photos/id/8/1025/900" alt="LAPTOP">
+        
+    </picture> -->
+
+    <style>
+        #catt {
+          position: relative;
+          cursor: pointer;
+        }
+      </style>
+    
+    <figure>
+        <img id="catt" src="images/cat.jpeg" width="1000" height="700" alt="cat">
+
+        <figcaption>
+           на данном изображении kot
+        </figcaption>
+
+    </figure>
+
+    <script>
+        catt.onclick = function() {
+          let start = Date.now();
+    
+          let timer = setInterval(function() {
+            let timePassed = Date.now() - start;
+    
+            catt.style.left = timePassed / 5 + 'px';
+    
+            if (timePassed > 2000) clearInterval(timer);
+    
+          }, 20);
+        }
+      </script>
+
+
+
+</body>
+
+
+
+
+</html>
+
+<!-- <ul>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <ul>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit.</li>
+    </ul>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+</ul>
+
+<ol start="10" reversed>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+    <li>Далеко-далеко за словесными горами в стране.</li>
+</ol>
+
+<dl>
+    <dt>Lorem, ipsum.</dt>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique delectus inventore nobis totam. Cum consectetur sit numquam commodi. Officiis non praesentium harum sapiente quibusdam voluptatibus velit quae neque ducimus libero.
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+</dl>
+<dl>
+    <dt>Lorem, ipsum.</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+</dl>
+<dl>
+    <dt>Lorem, ipsum.</dt>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+    <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quo, perferendis eligendi laborum beatae modi laboriosam cum voluptates suscipit libero quos officia soluta, quasi aliquam! Animi iure fugiat incidunt ab?</dd>
+</dl> -->

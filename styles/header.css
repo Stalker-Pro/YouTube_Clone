@@ -1,0 +1,35 @@
+.header {
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.left-section{
+    background-color: aqua;
+    width: 150px; /*1 fr*/
+    
+}
+/* 4:19:00 добавили к нашим фоточкам высоту */
+.hamburger-menu{
+    height:20px;
+}
+
+.youtube-logo{
+    height:20px;
+}
+
+.middle-section{
+    background-color: brown;
+    flex: 1; /*2 fr*/
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+}
+
+.right-section{
+    background-color: aqua;
+    width: 200px; /*1 fr*/
+}
