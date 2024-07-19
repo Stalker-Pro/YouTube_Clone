@@ -1,7 +1,7 @@
 
 .video-title{
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     width: 200px;
     font-size: 14px;
     font-weight: 500;
@@ -20,8 +20,13 @@
 
 .thumbnail{
     width: 100%;
-
+    border-radius: 12px;
  }
+
+.thumbnail-row{
+    margin-bottom: 6px;
+    position: relative;
+}
 
  .video-grid{
     display: grid;
@@ -29,6 +34,35 @@
     column-gap: 16px;
     row-gap: 40px;
 }
+ 
+/* Для экранов менее 645px: 1 колонка */
+@media (max-width: 645px) {  
+    .video-grid {
+        grid-template-columns: 1fr; 
+    } 
+}
+
+@media (min-width: 646px) and (max-width: 1095px) {  
+    .video-grid {
+        grid-template-columns: 1fr 1fr; 
+    } 
+}
+
+@media (min-width: 1096px) and (max-width: 1425px) {  
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr; 
+    } 
+}
+
+/* Для экранов шире 1425px: 4 колонки */
+@media (min-width: 1425px) {  
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+}
+
+
+/* 1425px */
 
 .video-info-grid{
     display: grid;
@@ -36,14 +70,11 @@
 }
 
 .profile-picture{
-    width: 80%;
+    width: 74%;
     border-radius: 50px;
 }
 
-.thumbnail-row{
-    margin-bottom: 10px;
-    position: relative;
-}
+
 
 .video-time {
     font-family: Roboto, Arial;
@@ -51,12 +82,13 @@
     font-weight: 500;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 2px;
-    background-color: black;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 6px;
+    background-color:rgba(0, 0, 0, 0.6);
     color: white;
     position: absolute;
     bottom: 8px;
     right: 5px;
+    opacity:0.9;
 }
