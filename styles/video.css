@@ -36,7 +36,7 @@
 }
  
 /* Для экранов менее 645px: 1 колонка */
-@media (max-width: 645px) {  
+@media (max-width: 645px) {   /*600*/
     .video-grid {
         grid-template-columns: 1fr; 
     } 
@@ -77,18 +77,14 @@
 
 
 .video-time {
-    font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding: 2px 5px;
     border-radius: 6px;
     background-color:rgba(0, 0, 0, 0.6);
     color: white;
     position: absolute;
-    bottom: 8px;
-    right: 5px;
+    bottom: 12px;
+    right: 8px;
     opacity:0.9;
 }

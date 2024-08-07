@@ -22,7 +22,7 @@
 
 <body>
 
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger-menu" src="/icons/hamburger-menu2.svg" alt="">
             <img class="youtube-logo" src="/icons/youtube-logo2.svg" alt="">
@@ -35,6 +35,8 @@
                 <img class="search-icon" src="/icons/search.png" alt="">
                 <div class="tooltip">Search</div>
             </button>
+
+            <!-- Put position absolute inside position relative -->
 
             <button class="voice-search-button">
                 <img class="voice-search-icon" src="/icons/voice-message-microphone-button.png" alt="">
@@ -55,12 +57,12 @@
             </div>
             <img class="current-user-picture" src="/icons/my_channel.jpg" alt="">
         </div>
-    </div>
+    </header>
 
     <!-- SIDEBAR -->
 
     
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-link">
             <img src="/icons/home.svg" alt="">
             <div>Home</div>
@@ -85,13 +87,13 @@
             <img src="/icons/library.svg" alt="">
             <div>Library</div>
         </div>
-    </div>
+    </nav>
 
 
     <!-- SIDEBAR -->
 
-
-    <div class="video-grid">
+  <main>
+    <section class="video-grid">
         <div class="video-preview">
 
             <div class="thumbnail-row"> 
@@ -361,10 +363,10 @@
             </div>
         </div>
 
-     </div>
-    
+     </section>
+    </main>   
            
-</body>
+  </body>
 </html>
 
 
