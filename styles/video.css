@@ -6,6 +6,12 @@
     border-radius: 15px;
     cursor: pointer;
 }
+
+.video-preview-effect:hover .video-time{
+    opacity: 0;
+    transition: 0.7s;
+}
+
 .video-title{
     margin-top: 0;
     margin-bottom: 6px;
